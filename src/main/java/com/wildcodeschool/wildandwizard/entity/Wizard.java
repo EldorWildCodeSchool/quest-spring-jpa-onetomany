@@ -18,7 +18,7 @@ public class Wizard {
     private boolean muggle;
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.REFRESH)
-    @JoinColumn(name = "wizard_id", nullable = false)
+    @JoinColumn(name = "school_id", nullable = false)
     private School school;
 
     public Wizard() {
